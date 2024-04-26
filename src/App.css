@@ -2,16 +2,22 @@
 /* ****************** Navbar  ***************************** */
 .nav_bar {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   margin: 0 3rem;
+  max-height: fit-content;
 
+}
+
+.nav_list_container {
+  align-items: center;
 }
 
 .nav_list {
   display: flex;
   justify-content: space-around;
   gap: 3rem;
+  margin-top: 1rem;
 }
 
 .nav_list li {
