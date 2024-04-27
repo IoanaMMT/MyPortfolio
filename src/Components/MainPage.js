@@ -1,6 +1,11 @@
 import React from "react";
 import logo from "./Images/Logo.svg";
 import myphoto from "./Images/myphoto.svg";
+import githubicon from "./Icons/icons8-github.svg";
+import htmlicon from "./Icons/icons8-html.svg";
+import cssicon from "./Icons/icons8-css.svg";
+import reacticon from "./Icons/icons8-react-js.svg";
+import typescripticon from "./Icons/icons8-typescript.svg";
 
 export default function MainPage() {
   return (
@@ -50,18 +55,35 @@ export default function MainPage() {
         </div>
       </div>
       {/* ********************* Skills ************************* */}
-      <div className="text_section">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className="skillSection">
+        <div className="text_section">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div className="listedSkills">
+          <div>
+            <img src={htmlicon} alt="html icon" />
+            HTML
+          </div>
+          <div>
+            <img src={cssicon} alt="css icon" />
+            CSS
+          </div>
+          <div>
+            <img src={typescripticon} alt="typescript icon" />
+            TypeScript
+          </div>
+          <div>
+            <img src={reacticon} alt="react icon" />
+            React
+          </div>
+          <div>
+            <img src={githubicon} alt="github icon" />
+            GitHub
+          </div>
+        </div>
       </div>
     </>
   );

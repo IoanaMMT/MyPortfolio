@@ -43,7 +43,8 @@ ul {
 
 /* ******************** Intro section ************************** */
 
-.intro_section {
+.intro_section,
+.skillSection {
   display: flex;
 }
 
@@ -65,4 +66,8 @@ ul {
 
 img {
   border-radius: 200px;
+}
+
+.listedSkills {
+
 }
