@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./Images/Simplysagelogo2.svg";
+import logo from "./Images/Logo.svg";
 import myphoto from "./Images/myphoto.svg";
 
 export default function MainPage() {
@@ -12,7 +12,7 @@ export default function MainPage() {
           <img
             src={logo}
             alt="sage leafs and the word simplysage"
-            width="150"
+            width="170"
             height="50"
             layout="responsive"
           />
@@ -48,6 +48,20 @@ export default function MainPage() {
             layout="responsive"
           />
         </div>
+      </div>
+      {/* ********************* Skills ************************* */}
+      <div className="text_section">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </>
   );
