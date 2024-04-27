@@ -34,10 +34,10 @@ export default function MainPage() {
       {/* **************** Intro Section ******************* */}
       <div className="intro_section">
         <div className="text_section">
-          <h3>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </h3>
+          </p>
         </div>
         <div className="my_photo">
           <img
