@@ -1,18 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-  background-color: #e3d3c3;
-}
+
 
 /* ****************** Navbar  ***************************** */
+
+.navigation {
+  background-color: #e3d3c3;
+  margin-bottom: 0;
+}
 .nav_bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 3rem 6rem 3rem;
+  margin: 0 3rem 0 3rem;
   max-height: fit-content;
-
 }
 
 .nav_list_container {
@@ -43,12 +45,13 @@ ul {
 
 /* ******************** Intro section ************************** */
 
-.intro_section,
-.skillSection {
+.intro_section {
   display: flex;
+  padding: 6rem 0 8rem 0;
+  background-color: #e3d3c3;
 }
 
-.text_section {
+.intro_text_section {
   max-width: 35%;
   margin: 10rem;
   text-align: center;
@@ -64,10 +67,38 @@ ul {
   opacity: 0.4;
 }
 
-img {
+.my_photo img {
   border-radius: 200px;
 }
 
+/* ******************** Skills section ************************** */
+.skillSection {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+
 .listedSkills {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.card {
+  text-align: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.skills_text_section {
+  max-width: 35%;
+  margin: 10rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
 
 }
