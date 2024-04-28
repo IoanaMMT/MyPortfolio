@@ -39,7 +39,7 @@ export default function MainPage() {
           </div>
         </div>
       </div>
-      {/* **************** Intro Section ******************* */}
+      {/* **************** Intro  ************************** */}
       <div className="intro_section">
         <div className="intro_text_section">
           <p>
@@ -96,6 +96,16 @@ export default function MainPage() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
+      </div>
+      {/* *************************** Projects ********************************* */}
+      <div className="projects_section">
+        <div className="projects_text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div className="project_to_do_list"></div>
       </div>
     </>
   );
