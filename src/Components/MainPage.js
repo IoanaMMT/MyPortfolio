@@ -1,9 +1,10 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function MainPage() {
   return (
     <>
-      <h1>Hello world</h1>
+      <body></body>
     </>
   );
 }
