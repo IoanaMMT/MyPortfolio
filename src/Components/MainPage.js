@@ -1,8 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./Images/Logo.svg";
+import Collapse from "react-bootstrap/Collapse";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
 
 export default function MainPage() {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <body>
@@ -15,25 +20,41 @@ export default function MainPage() {
               height="50"
               layout="responsive"
             />
-            <div className="collapse navbar-collapse">
-              <ul className="navbar-nav ms-auto">
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    Skills
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    Project
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <Button
+              className="navbar-toggler"
+              type="button"
+              // data-bs-toggle="collapse"
+              // data-bs-target="#navmenu"
+              onClick={() => setOpen(!open)}
+              aria-controls="example-collapse-text"
+              aria-expanded={open}
+            >
+              <span className="navbar-toggler-icon"></span>
+            </Button>
+            <Collapse in={open}>
+              <div
+                className="collapse navbar-collapse"
+                id="example-collapse-text"
+              >
+                <ul className="navbar-nav ms-auto">
+                  <li className="nav-item">
+                    <a href="#" className="nav-link">
+                      Skills
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#" className="nav-link">
+                      Project
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#" className="nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </Collapse>
           </div>
         </nav>
       </body>
