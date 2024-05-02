@@ -1,10 +1,23 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "./Images/Logo.svg";
 
 export default function MainPage() {
   return (
     <>
-      <body></body>
+      <body>
+        <nav className="navbar navbar-expand-lg bg-light navbar-light">
+          <div className="container">
+            <img
+              src={logo}
+              alt="sage leafs and the word simplysage"
+              width="170"
+              height="50"
+              layout="responsive"
+            />
+          </div>
+        </nav>
+      </body>
     </>
   );
 }
