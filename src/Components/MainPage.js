@@ -15,6 +15,25 @@ export default function MainPage() {
               height="50"
               layout="responsive"
             />
+            <div className="collapse navbar-collapse">
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <a href="#" className="nav-link">
+                    Skills
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link">
+                    Project
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </body>
