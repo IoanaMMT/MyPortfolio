@@ -59,11 +59,11 @@ export default function MainPage() {
           </div>
         </nav>
         {/* *************************** SHOWCASE **************************** */}
-        <section className="bg-light text_dark p-5 text-center">
+        <section className="bg-light text_dark p-5 pb-md-0 text-center">
           <div className="container">
             <div className="d-sm-flex align-items-center justify-content-between">
               <div>
-                <h3>
+                <h3 className="px-md-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </h3>
