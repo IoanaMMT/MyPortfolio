@@ -58,22 +58,22 @@ export default function MainPage() {
             </Collapse>
           </div>
         </nav>
-        {/* *************************** SHOWCASE ****************************         */}
+        {/* *************************** SHOWCASE **************************** */}
         <section className="bg-light text_dark p-5 text-center">
           <div className="container">
-            <div className="d-sm-flex">
+            <div className="d-sm-flex align-items-center justify-content-between">
               <div>
-                <p>
+                <h3>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                </h3>
               </div>
               <img
-                className="img-fluid w-50"
+                className="img-fluid w-50 d-none d-sm-block"
                 src={myphoto}
                 alt="Photo of Ioana"
-                width="542"
-                height="550"
+                // width="542"
+                // height="550"
                 layout="responsive"
               />
             </div>

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
 
 
 
@@ -38,9 +44,6 @@
 
 
 
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 /* ****************** Navbar  ***************************** */
 
