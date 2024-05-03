@@ -1,9 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./Images/Logo.svg";
+import myphoto from "./Images/myphoto.svg";
 import Collapse from "react-bootstrap/Collapse";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
+import { Container } from "react-bootstrap";
 
 export default function MainPage() {
   const [open, setOpen] = useState(false);
@@ -11,6 +13,7 @@ export default function MainPage() {
   return (
     <>
       <body>
+        {/* **************************** NAVBAR ********************************** */}
         <nav className="navbar navbar-expand-lg bg-light navbar-light">
           <div className="container">
             <img
@@ -23,8 +26,6 @@ export default function MainPage() {
             <Button
               className="navbar-toggler"
               type="button"
-              // data-bs-toggle="collapse"
-              // data-bs-target="#navmenu"
               onClick={() => setOpen(!open)}
               aria-controls="example-collapse-text"
               aria-expanded={open}
@@ -57,6 +58,27 @@ export default function MainPage() {
             </Collapse>
           </div>
         </nav>
+        {/* *************************** SHOWCASE ****************************         */}
+        <section className="bg-light text_dark p-5 text-center">
+          <div className="container">
+            <div className="d-sm-flex">
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <img
+                className="img-fluid w-50"
+                src={myphoto}
+                alt="Photo of Ioana"
+                width="542"
+                height="550"
+                layout="responsive"
+              />
+            </div>
+          </div>
+        </section>
       </body>
     </>
   );
