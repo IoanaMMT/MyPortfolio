@@ -69,13 +69,77 @@ export default function MainPage() {
                 </h3>
               </div>
               <img
-                className="img-fluid w-50 d-none d-sm-block"
+                className="img-fluid w-50 d-none d-sm-block my-image"
                 src={myphoto}
                 alt="Photo of Ioana"
                 // width="542"
                 // height="550"
                 layout="responsive"
               />
+            </div>
+          </div>
+        </section>
+        {/* *************************** Skills *************************************** */}
+        <section className="bg-light text_dark p-5 pb-md-0 text-center">
+          <div className="container">
+            <div className="d-sm-flex align-items-center justify-content-between">
+              <div>
+                <h3 className="px-md-5">My Skills</h3>
+              </div>
+              {/* <div className="row text-center">
+                <div className="col-lg-4">card</div>
+                <div className="col-lg-4">card</div>
+                <div className="col-lg-4">card</div>
+              </div> */}
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
