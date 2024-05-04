@@ -88,89 +88,93 @@ export default function MainPage() {
         {/* *************************** Skills *************************************** */}
         <section className="bg-light text_dark p-5 pb-md-0 text-center ">
           <div className="container">
-            <div className="d-sm-flex align-items-center justify-content-between">
-              <div class="row row-cols-1 row-cols-md-3 w-50 g-4">
-                <div class="col">
-                  <div class="card">
-                    <div class="card-body">
-                      <img
-                        className="img-fluid"
-                        src={htmlicon}
-                        alt="html icon"
-                        width={80}
-                        height={80}
-                      />
+            <div className="row">
+              <div className="col-md-6">
+                <div class="row row-cols-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <img
+                          className="img-fluid"
+                          src={htmlicon}
+                          alt="html icon"
+                          width={80}
+                          height={80}
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-body">
-                      <img
-                        className="img-fluid"
-                        src={cssicon}
-                        alt="css icon"
-                        width={80}
-                        height={80}
-                      />
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <img
+                          className="img-fluid"
+                          src={cssicon}
+                          alt="css icon"
+                          width={80}
+                          height={80}
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-body">
-                      <img
-                        className="img-fluid"
-                        src={typescripticon}
-                        alt="typescript icon"
-                        width={80}
-                        height={80}
-                      />
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <img
+                          className="img-fluid"
+                          src={typescripticon}
+                          alt="typescript icon"
+                          width={80}
+                          height={80}
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-body">
-                      <img
-                        className="img-fluid"
-                        src={reacticon}
-                        alt="react icon"
-                        width={80}
-                        height={80}
-                      />
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <img
+                          className="img-fluid"
+                          src={reacticon}
+                          alt="react icon"
+                          width={80}
+                          height={80}
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-body">
-                      <img
-                        className="img-fluid"
-                        src={githubicon}
-                        alt="github icon"
-                        width={80}
-                        height={80}
-                      />
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <img
+                          className="img-fluid"
+                          src={githubicon}
+                          alt="github icon"
+                          width={80}
+                          height={80}
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <div class="card-body">
-                      <img
-                        className="img-fluid"
-                        src={canvaicon}
-                        alt="canva icon"
-                        width={80}
-                        height={80}
-                      />
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <img
+                          className="img-fluid"
+                          src={canvaicon}
+                          alt="canva icon"
+                          width={80}
+                          height={80}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="w-50">
-                <h1 className="px-md-5">My Skills</h1>
+              <div className="col-md-6">
+                <div className="w-50">
+                  <h1 className="px-md-5">My Skills</h1>
+                </div>
               </div>
             </div>
           </div>
