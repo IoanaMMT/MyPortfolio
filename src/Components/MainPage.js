@@ -1,11 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "./Images/Logo.svg";
-import myphoto from "./Images/myphoto.svg";
 import Collapse from "react-bootstrap/Collapse";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
+import logo from "./Images/Logo.svg";
+import myphoto from "./Images/myphoto.svg";
 import { Container } from "react-bootstrap";
+import githubicon from "./Icons/icons8-github.svg";
+import htmlicon from "./Icons/icons8-html.svg";
+import cssicon from "./Icons/icons8-css.svg";
+import reacticon from "./Icons/icons8-react-js.svg";
+import typescripticon from "./Icons/icons8-typescript.svg";
+import canvaicon from "./Icons/icons8-canva.svg";
 
 export default function MainPage() {
   const [open, setOpen] = useState(false);
@@ -87,69 +93,78 @@ export default function MainPage() {
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
+                      <img
+                        className="img-fluid"
+                        src={htmlicon}
+                        alt="html icon"
+                        width={80}
+                        height={80}
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
+                      <img
+                        className="img-fluid"
+                        src={cssicon}
+                        alt="css icon"
+                        width={80}
+                        height={80}
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
-                      </p>
+                      <img
+                        className="img-fluid"
+                        src={typescripticon}
+                        alt="typescript icon"
+                        width={80}
+                        height={80}
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
-                      </p>
+                      <img
+                        className="img-fluid"
+                        src={reacticon}
+                        alt="react icon"
+                        width={80}
+                        height={80}
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
-                      </p>
+                      <img
+                        className="img-fluid"
+                        src={githubicon}
+                        alt="github icon"
+                        width={80}
+                        height={80}
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
+                      <img
+                        className="img-fluid"
+                        src={canvaicon}
+                        alt="canva icon"
+                        width={80}
+                        height={80}
+                      />
                     </div>
                   </div>
                 </div>
@@ -164,15 +179,6 @@ export default function MainPage() {
     </>
   );
 }
-
-// import logo from "./Images/Logo.svg";
-// import myphoto from "./Images/myphoto.svg";
-// import githubicon from "./Icons/icons8-github.svg";
-// import htmlicon from "./Icons/icons8-html.svg";
-// import cssicon from "./Icons/icons8-css.svg";
-// import reacticon from "./Icons/icons8-react-js.svg";
-// import typescripticon from "./Icons/icons8-typescript.svg";
-// import canvaicon from "./Icons/icons8-canva.svg";
 
 // export default function MainPage() {
 //   return (
