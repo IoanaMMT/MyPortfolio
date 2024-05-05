@@ -65,7 +65,7 @@ export default function MainPage() {
           </div>
         </nav>
         {/* *************************** SHOWCASE **************************** */}
-        <section className="bg-light text_dark p-5 pb-md-0 text-center">
+        <section className="bg-light text_dark p-5  text-center">
           <div className="container">
             <div className="d-sm-flex align-items-center justify-content-between">
               <div>
@@ -89,7 +89,12 @@ export default function MainPage() {
         <section className="bg-light text_dark p-5 pb-md-0 text-center ">
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-6 order-md-2 align-self-center mb-5 mb-md-0  ">
+                <div className="my-skills-text">
+                  <h1 className="px-md-5">My Skills</h1>
+                </div>
+              </div>
+              <div className="col-md-6 order-md-1">
                 <div class="row row-cols-3 g-4">
                   <div class="col">
                     <div class="card">
@@ -171,10 +176,26 @@ export default function MainPage() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
-                <div className="w-50">
-                  <h1 className="px-md-5">My Skills</h1>
-                </div>
+            </div>
+          </div>
+        </section>
+        {/* *************************** Project To Do List *************************************** */}
+        <section className="bg-light text_light p-5 text-center">
+          <div className="container pt-5">
+            <h1>Projects</h1>
+          </div>
+        </section>
+        <section className="bg-light text_dark p-5  text-center">
+          <div className="container">
+            <div className="row pb-md-0 align-items-center justify-content-between">
+              <div className="col-md">
+                <img />
+              </div>
+              <div className="col-md p-5">
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h3>
               </div>
             </div>
           </div>
@@ -183,106 +204,3 @@ export default function MainPage() {
     </>
   );
 }
-
-// export default function MainPage() {
-//   return (
-//     <>
-//       {/* ****************** Navigation ******************** */}
-//       <div className="navigation">
-//         <div className="nav_bar">
-//           {/* <h3 className="logo">SimplySage</h3> */}
-//           <div className="logo">
-//             <img
-//               src={logo}
-//               alt="sage leafs and the word simplysage"
-//               width="170"
-//               height="50"
-//               layout="responsive"
-//             />
-//           </div>
-//           <div className="nav_list_container">
-//             <ul className="nav_list">
-//               <li>
-//                 <a href="#">Skills</a>
-//               </li>
-//               <li>
-//                 <a href="#">Project</a>
-//               </li>
-//               <li>
-//                 <a href="#">Contact</a>
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-//       </div>
-//       {/* **************** Intro  ************************** */}
-//       <div className="intro_section">
-//         <div className="intro_text_section">
-//           <p>
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-//             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-//           </p>
-//         </div>
-//         <div className="my_photo">
-//           <img
-//             src={myphoto}
-//             alt="Photo of Ioana"
-//             width="542"
-//             height="550"
-//             layout="responsive"
-//           />
-//         </div>
-//       </div>
-//       {/* ********************* Skills ************************* */}
-//       <div className="skillSection">
-//         <div className="listedSkills">
-//           <div className="card">
-//             <img src={htmlicon} alt="html icon" width={80} height={80} />
-//             <p>HTML</p>
-//           </div>
-//           <div className="card">
-//             <img src={cssicon} alt="css icon" width={80} height={80} />
-//             <p>CSS</p>
-//           </div>
-//           <div className="card">
-//             <img
-//               src={typescripticon}
-//               alt="typescript icon"
-//               width={80}
-//               height={80}
-//             />
-//             <p>Typescript</p>
-//           </div>
-//           <div className="card">
-//             <img src={reacticon} alt="react icon" width={80} height={80} />
-//             <p>React</p>
-//           </div>
-//           <div className="card">
-//             <img src={githubicon} alt="github icon" width={80} height={80} />
-//             <p>GitHub</p>
-//           </div>
-//           <div className="card">
-//             <img src={canvaicon} alt="github icon" width={80} height={80} />
-//             <p>Canva</p>
-//           </div>
-//         </div>
-//         <div className="skills_text_section">
-//           <p>
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-//             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-//           </p>
-//         </div>
-//       </div>
-//       {/* *************************** Projects ********************************* */}
-//       <div className="projects_section">
-//         <div className="projects_text">
-//           <p>
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-//             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-//           </p>
-//         </div>
-//         <div className="project_to_do_list"></div>
-//       </div>
-//     </>
-//   );
-// }
