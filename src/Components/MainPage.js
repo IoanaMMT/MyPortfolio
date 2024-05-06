@@ -86,7 +86,7 @@ export default function MainPage() {
           </div>
         </section>
         {/* *************************** Skills *************************************** */}
-        <section className="bg-light text_dark p-5 pb-md-0 text-center ">
+        <section className="bg-light text_dark p-5 pb-md-0 text-center skills-section">
           <div className="container">
             <div className="row">
               <div className="col-md-6 order-md-2 align-self-center mb-5 mb-md-0  ">
@@ -180,7 +180,7 @@ export default function MainPage() {
           </div>
         </section>
         {/* *************************** Project To Do List *************************************** */}
-        <section className="bg-light text_light p-5 text-center">
+        <section className="bg-light p-5 text-center projects-title">
           <div className="container pt-5">
             <h1>Projects</h1>
           </div>
@@ -192,8 +192,8 @@ export default function MainPage() {
                 <img className="desktopimage" src={desktop} alt="Desktop" />
               </div>
               <div className="col-md-6 p-md-5 text-center">
-                <h1 className="pb-3">To do list</h1>
-                <h3>
+                <h1 className="pb-3 text-light">To do list</h1>
+                <h3 className="text-light">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </h3>
