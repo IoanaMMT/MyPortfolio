@@ -5,7 +5,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import logo from "./Images/Logo.svg";
 import myphoto from "./Images/myphoto.svg";
-import { Container } from "react-bootstrap";
+import desktop from "./Images/desktopandmobile.svg";
 import githubicon from "./Icons/icons8-github.svg";
 import htmlicon from "./Icons/icons8-html.svg";
 import cssicon from "./Icons/icons8-css.svg";
@@ -18,7 +18,7 @@ export default function MainPage() {
 
   return (
     <>
-      <body>
+      <body className="entire-page">
         {/* **************************** NAVBAR ********************************** */}
         <nav className="navbar navbar-expand-lg bg-light navbar-light">
           <div className="container">
@@ -185,13 +185,14 @@ export default function MainPage() {
             <h1>Projects</h1>
           </div>
         </section>
-        <section className="bg-light text_dark p-5  text-center">
+        <section className="p-5">
           <div className="container">
-            <div className="row pb-md-0 align-items-center justify-content-between">
+            <div className="row align-items-centre justify-content-between">
               <div className="col-md">
-                <img />
+                <img className="desktopimage" src={desktop} alt="Desktop" />
               </div>
               <div className="col-md p-5">
+                <h1 className="pb-3">To do list</h1>
                 <h3>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
