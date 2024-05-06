@@ -185,7 +185,7 @@ export default function MainPage() {
             <h1>Projects</h1>
           </div>
         </section>
-        <section className="p-5">
+        <section className="p-5 to-do-list">
           <div className="container">
             <div className="row align-items-centre justify-content-between">
               <div className="col-md">
@@ -201,6 +201,24 @@ export default function MainPage() {
             </div>
           </div>
         </section>
+        {/* ******************************* Other Project ********************************************** */}
+        <section className="p-5">
+          <div className="container">
+            <div className="row align-items-centre justify-content-between">
+              <div className="col-md order-md-2">
+                <img className="desktopimage" src={desktop} alt="Desktop" />
+              </div>
+              <div className="col-md-6 p-md-5 text-center">
+                <h1 className="pb-3 text-dark">To do list</h1>
+                <h3 className="text-dark">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* ************************************ Third Project *********************************************** */}
       </body>
     </>
   );
