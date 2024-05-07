@@ -5,7 +5,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import logo from "./Images/Logo.svg";
 import myphoto from "./Images/myphoto.svg";
-import desktop from "./Images/desktopandmobile.svg";
+import desktop from "./Images/desk&mobile.svg";
 import githubicon from "./Icons/icons8-github.svg";
 import htmlicon from "./Icons/icons8-html.svg";
 import cssicon from "./Icons/icons8-css.svg";
@@ -51,7 +51,7 @@ export default function MainPage() {
                   </li>
                   <li className="nav-item">
                     <a href="#" className="nav-link">
-                      Project
+                      Projects
                     </a>
                   </li>
                   <li className="nav-item">

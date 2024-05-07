@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+.nav-item {
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  padding-left: 2rem;
+  text-decoration-color: black;
+}
 
 .to-do-list {
   background-color: #69a5a4 !important;
