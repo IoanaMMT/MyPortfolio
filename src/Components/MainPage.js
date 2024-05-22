@@ -192,8 +192,8 @@ export default function MainPage() {
                 <img className="desktopimage" src={desktop} alt="Desktop" />
               </div>
               <div className="col-md-6 p-md-5 text-center">
-                <h1 className="pb-3 text-light">To do list</h1>
-                <h3 className="text-light">
+                <h1 className="pb-3 text-dark">To do list</h1>
+                <h3 className="text-dark">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </h3>
