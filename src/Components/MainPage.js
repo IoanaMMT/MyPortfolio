@@ -30,7 +30,7 @@ export default function MainPage() {
               layout="responsive"
             />
             <Button
-              className="navbar-toggler"
+              className="navbar-toggler "
               type="button"
               onClick={() => setOpen(!open)}
               aria-controls="example-collapse-text"
@@ -40,7 +40,7 @@ export default function MainPage() {
             </Button>
             <Collapse in={open}>
               <div
-                className="collapse navbar-collapse"
+                className="collapse navbar-collapse smooth-collapse"
                 id="example-collapse-text"
               >
                 <ul className="navbar-nav ms-auto">
