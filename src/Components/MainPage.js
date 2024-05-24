@@ -11,7 +11,7 @@ import htmlicon from "./Icons/icons8-html.svg";
 import cssicon from "./Icons/icons8-css.svg";
 import reacticon from "./Icons/icons8-react-js.svg";
 import typescripticon from "./Icons/icons8-typescript.svg";
-import canvaicon from "./Icons/icons8-canva.svg";
+import figma from "./Icons/icons8-figma.svg";
 
 export default function MainPage() {
   const [open, setOpen] = useState(false);
@@ -32,6 +32,8 @@ export default function MainPage() {
             <Button
               className="navbar-toggler "
               type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#example-collapse-text"
               onClick={() => setOpen(!open)}
               aria-controls="example-collapse-text"
               aria-expanded={open}
@@ -166,8 +168,8 @@ export default function MainPage() {
                       <div class="card-body">
                         <img
                           className="img-fluid"
-                          src={canvaicon}
-                          alt="canva icon"
+                          src={figma}
+                          alt="figma icon"
                           width={80}
                           height={80}
                         />

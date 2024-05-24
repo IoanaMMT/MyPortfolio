@@ -9,13 +9,14 @@
 }
 
 .smooth-collapse {
-  transition: height 0.6s ease; /* React bootstrap component */
+  transition: height 0.4s ease; /* React bootstrap component */
 }
 
-/* .collapse {
+
+.collapse {
   display: block; 
   overflow: hidden; 
-} */
+}
 
 .skills-section {
   background-color: #69a5a4 !important;
