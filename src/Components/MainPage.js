@@ -49,12 +49,12 @@ export default function MainPage() {
               >
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <a href="#skills" className="nav-link">
                       Skills
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <a href="#projects" className="nav-link">
                       Projects
                     </a>
                   </li>
@@ -90,7 +90,10 @@ export default function MainPage() {
           </div>
         </section>
         {/* *************************** Skills *************************************** */}
-        <section className="bg-light text_dark p-5 pb-md-0 text-center skills-section">
+        <section
+          className="bg-light text_dark p-5 pb-md-0 text-center skills-section"
+          id="skills"
+        >
           <div className="container">
             <div className="row">
               <div className="col-md-6 order-md-2 align-self-center mb-5 mb-md-0  ">
@@ -184,7 +187,10 @@ export default function MainPage() {
           </div>
         </section>
         {/* *************************** Project To Do List *************************************** */}
-        <section className="bg-light p-5 text-center projects-title">
+        <section
+          className="bg-light p-5 text-center projects-title"
+          id="projects"
+        >
           <div className="container pt-5">
             <h1>Projects</h1>
           </div>
