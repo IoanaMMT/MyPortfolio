@@ -12,6 +12,7 @@ import cssicon from "./Icons/icons8-css.svg";
 import reacticon from "./Icons/icons8-react-js.svg";
 import typescripticon from "./Icons/icons8-typescript.svg";
 import figma from "./Icons/icons8-figma.svg";
+import "../App.css";
 
 export default function MainPage() {
   const [open, setOpen] = useState(false);
@@ -29,8 +30,9 @@ export default function MainPage() {
               height="50"
               layout="responsive"
             />
+
             <Button
-              className="navbar-toggler "
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#example-collapse-text"

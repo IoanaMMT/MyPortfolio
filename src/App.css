@@ -8,21 +8,6 @@
   text-decoration-color: black;
 }
 
-.smooth-collapse {
-  transition: height 0.4s ease; /* React bootstrap component */
-}
-
-
-.collapse {
-  display: block; 
-  overflow: hidden; 
-}
-
-.skills-section {
-  background-color: #69a5a4 !important;
-}
-
-
 
 h3 {
   font-family: "Montserrat", sans-serif;
