@@ -79,8 +79,8 @@ export default function MainPage() {
             <div className="d-sm-flex align-items-center justify-content-between">
               <div>
                 <h3 className="px-md-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Welcome to my portfolio! I am passionate about creating
+                  interactive and responsive web applications.
                 </h3>
               </div>
               <img
@@ -206,11 +206,12 @@ export default function MainPage() {
               <div className="col-md">
                 <img className="desktopimage" src={desktop} alt="Desktop" />
               </div>
-              <div className="col-md-6 p-md-5 text-center">
+              <div className="col-md-6 p-md-5 pt-lg-0 text-center">
                 <h1 className="pb-3 text-dark">To do list</h1>
                 <h3 className="text-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  A responsive and user-friendly to-do list application to help
+                  you manage your tasks efficiently, ensuring you stay
+                  productive whether you're on a desktop or mobile device.
                 </h3>
               </div>
             </div>
@@ -226,8 +227,8 @@ export default function MainPage() {
               <div className="col-md-6 p-md-5 text-center">
                 <h1 className="pb-3 text-light">To do list</h1>
                 <h3 className="text-light">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  A responsive and user-friendly to-do list app to efficiently
+                  manage your tasks across all devices.
                 </h3>
               </div>
             </div>
