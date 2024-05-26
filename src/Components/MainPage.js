@@ -212,15 +212,15 @@ export default function MainPage() {
           </div>
         </section>
         {/* ******************************* Other Project ********************************************** */}
-        <section className="p-5">
+        <section className="p-5 other-project">
           <div className="container">
             <div className="row align-items-centre justify-content-between">
               <div className="col-md order-md-2">
                 <img className="desktopimage" src={desktop} alt="Desktop" />
               </div>
               <div className="col-md-6 p-md-5 text-center">
-                <h1 className="pb-3 text-dark">To do list</h1>
-                <h3 className="text-dark">
+                <h1 className="pb-3 text-light">To do list</h1>
+                <h3 className="text-light">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </h3>

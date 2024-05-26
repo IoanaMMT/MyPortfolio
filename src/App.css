@@ -10,11 +10,15 @@
 
 
 .skills-section {
-  background-color: #e3d3c3;
+  background-color: #e1d6c4;
 }
 .skills-icon {
-  background-color: #e3d3c3;
+  background-color: #e1d6c4;
   border: 1px solid black;
+}
+
+.other-project {
+  background-color: #7c96a0;
 }
 
 
