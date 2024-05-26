@@ -91,7 +91,7 @@ export default function MainPage() {
         </section>
         {/* *************************** Skills *************************************** */}
         <section
-          className="bg-light text_dark p-5 pb-md-0 text-center skills-section"
+          className="text_dark p-5 pb-md-0 text-center skills-section"
           id="skills"
         >
           <div className="container">
@@ -105,7 +105,7 @@ export default function MainPage() {
                 <div class="row row-cols-3 g-4">
                   <div class="col">
                     <div class="card">
-                      <div class="card-body">
+                      <div class="card-body skills-icon">
                         <img
                           className="img-fluid"
                           src={htmlicon}
@@ -118,7 +118,7 @@ export default function MainPage() {
                   </div>
                   <div class="col">
                     <div class="card">
-                      <div class="card-body">
+                      <div class="card-body skills-icon">
                         <img
                           className="img-fluid"
                           src={cssicon}
@@ -131,7 +131,7 @@ export default function MainPage() {
                   </div>
                   <div class="col">
                     <div class="card">
-                      <div class="card-body">
+                      <div class="card-body skills-icon">
                         <img
                           className="img-fluid"
                           src={typescripticon}
@@ -144,7 +144,7 @@ export default function MainPage() {
                   </div>
                   <div class="col">
                     <div class="card">
-                      <div class="card-body">
+                      <div class="card-body skills-icon">
                         <img
                           className="img-fluid"
                           src={reacticon}
@@ -157,7 +157,7 @@ export default function MainPage() {
                   </div>
                   <div class="col">
                     <div class="card">
-                      <div class="card-body">
+                      <div class="card-body skills-icon">
                         <img
                           className="img-fluid"
                           src={githubicon}
@@ -170,7 +170,7 @@ export default function MainPage() {
                   </div>
                   <div class="col">
                     <div class="card">
-                      <div class="card-body">
+                      <div class="card-body skills-icon">
                         <img
                           className="img-fluid"
                           src={figma}

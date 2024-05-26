@@ -8,6 +8,14 @@
   text-decoration-color: black;
 }
 
+.skills-section {
+  background-color: #e3d3c3;
+}
+.skills-icon {
+  background-color: #e3d3c3;
+  border: 1px solid black;
+}
+
 
 h3 {
   font-family: "Montserrat", sans-serif;
