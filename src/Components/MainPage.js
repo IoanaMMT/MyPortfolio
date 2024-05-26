@@ -39,6 +39,11 @@ export default function MainPage() {
               onClick={() => setOpen(!open)}
               aria-controls="example-collapse-text"
               aria-expanded={open}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                boxShadow: "none",
+              }}
             >
               <span className="navbar-toggler-icon"></span>
             </Button>
