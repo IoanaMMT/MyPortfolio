@@ -69,7 +69,7 @@ export default function MainPage() {
           </div>
         </nav>
         {/* *************************** SHOWCASE **************************** */}
-        <section className="bg-light text_dark p-5  text-center showcase">
+        <section className="bg-light text_dark pt-5 ps-5 pe-5 pb-0  text-center showcase">
           <div className="container">
             <div className="d-sm-flex align-items-center justify-content-between">
               <div>
@@ -91,7 +91,7 @@ export default function MainPage() {
         </section>
         {/* *************************** Skills *************************************** */}
         <section
-          className="text_dark p-5 pb-md-0 text-center skills-section"
+          className="text_dark p-5 text-center skills-section"
           id="skills"
         >
           <div className="container">
