@@ -70,7 +70,7 @@ export default function MainPage() {
           </div>
         </nav>
         {/* *************************** SHOWCASE **************************** */}
-        <section className="bg-light text_dark pt-5 ps-5 pe-5 pb-lg-0  text-center showcase">
+        <section className="bg-light text_dark pt-5 ps-5 pe-5 pb-3 text-center showcase">
           <div className="container">
             <div className="d-sm-flex align-items-center justify-content-between">
               <div>
@@ -188,11 +188,8 @@ export default function MainPage() {
           </div>
         </section>
         {/* *************************** Project To Do List *************************************** */}
-        <section
-          className="bg-light p-5 text-center projects-title"
-          id="projects"
-        >
-          <div className="container pt-5">
+        <section className="p-5 text-center projects-title" id="projects">
+          <div className="container pt-2">
             <h1>Projects</h1>
           </div>
         </section>
