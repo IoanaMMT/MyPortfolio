@@ -30,8 +30,45 @@ export default function MainPage() {
               height="50"
               layout="responsive"
             />
-
             <Button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#example-collapse-text"
+              onClick={() => setOpen(!open)}
+              aria-controls="example-collapse-text"
+              aria-expanded={open}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                boxShadow: "none",
+              }}
+            >
+              <span className="navbar-toggler-icon"></span>
+            </Button>
+            <Collapse in={open}>
+              <div id="example-collapse-text" className="navbar-collapse">
+                <ul className="navbar-nav ms-auto">
+                  <li className="nav-item">
+                    <a href="#skills" className="nav-link">
+                      Skills
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#projects" className="nav-link">
+                      Projects
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#" className="nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </Collapse>
+
+            {/* <Button
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -70,7 +107,7 @@ export default function MainPage() {
                   </li>
                 </ul>
               </div>
-            </Collapse>
+            </Collapse> */}
           </div>
         </nav>
         {/* *************************** SHOWCASE **************************** */}

@@ -9,10 +9,8 @@
 }
 
 /* } This prop was added to make the collapse transition smoother. Added as well a div arround the immediate collapse child and specified the margin and padding zero. what it does, it moves the button back and forward and not displaying the collapse. Still not working :( */
-.smooth-collapse {
-  padding: 0;
-  margin: 0;
-  transition: height 0.35s ease;
+.navbar-collapse {
+  transition: height 0.6s ease;
 }
 
 
