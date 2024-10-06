@@ -48,18 +48,84 @@ h3 {
   color: white;
 }
 
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.footer-nav-item {
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  text-decoration-color: black;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.bottom-section {
+  padding: 20px;
+  background-color: #e1d6c4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+              0 6px 20px rgba(0, 0, 0, 0.19); /* Adds depth */
+  transform: translateZ(0); /* Flat surface initially */
+}
+
+
+/* ************ experiment ******** */
 
 
 
+.skills-icon figure img {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.skills-icon figure:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
 
 
-
-
-
-
-
-
-
+/* Shine */
+.add-shine figure {
+	position: relative;
+}
+.add-shine figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.add-shine figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
 
 
 
