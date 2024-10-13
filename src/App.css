@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
 .nav-item {
@@ -11,6 +12,51 @@
 /* } This prop was added to make the collapse transition smoother. Added as well a div arround the immediate collapse child and specified the margin and padding zero. what it does, it moves the button back and forward and not displaying the collapse. Still not working :( */
 .navbar-collapse {
   transition: height 0.6s ease;
+}
+
+/* ***************  Showcase Section  ********************** */
+
+.showcase {
+  position: relative;
+}
+
+.overlap-text {
+  position: relative;
+  z-index: 1; /* Bring the text in front */
+  margin-right: -150px; /* Adjust this value to overlap more/less */
+  margin-left: 20px;
+  margin-bottom: 200px;
+}
+
+.subtext {
+  width: 70%;
+  margin-left: 200px;
+  z-index: inherit;
+}
+
+.subtext-text {
+  font-size: 1.2rem;
+  letter-spacing:0.1rem ;
+  color: #315c2b;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.overlap-photo {
+  position: relative;
+  z-index: 0; /* Keep the image behind */
+  margin-left: -100px; /* Adjust this value to overlap more/less */
+  margin-right: 270px;
+}
+
+.my-image {
+  opacity: 0.5;
+  /* border-radius: 350px; */
+  padding-bottom: 3rem;
+  width: 30%;
+  height: auto;
 }
 
 
@@ -32,11 +78,7 @@ h3 {
   font-weight: 400;
 }
 
-.my-image {
-  opacity: 0.3;
-  border-radius: 350px;
-  padding-bottom: 3rem;
-}
+
 
 .desktopimage {
   width: 100%;
@@ -128,7 +170,58 @@ h3 {
 }
 
 
+/* ***********  Hover over section titles  ********** */
 
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: white;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+
+h1.btn {
+  font-size: 48px;
+}
+
+.btn:after,
+.btn:before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+
+.btn:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+
+.btn:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+
+.btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+  width: 100%;
+  height: 100%;
+}
 
 
 
