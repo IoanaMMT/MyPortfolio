@@ -14,6 +14,11 @@ a.nav-link {
   color: rgb(255, 255, 255);
 }
 
+a.nav-link:focus, a.nav-link:hover {
+  color: #9ea93f !important;
+}
+
+
 .navbar {
   background-color: #181f1c;
 }
@@ -136,7 +141,7 @@ h3 {
   background-color: #181f1c;
 }
 
-/* ************ experiment ******** */
+/* ************ Hover effect over the Skills section ******** */
 
 
 
