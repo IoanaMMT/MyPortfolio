@@ -4,11 +4,13 @@ import Collapse from "react-bootstrap/Collapse";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import logo from "./Images/Logo.svg";
+import lightlogo from "./Images/SimplySage.svg";
 import myphoto from "./Images/myphoto.jpg";
 import desktop from "./Images/desk&mobile.svg";
 import bumpchart from "./Images/BumpChart.svg";
 import storypointing from "./Images/Story-pointing-game.svg";
 import welcometext from "./Images/WelcomeStyle.svg";
+import lightwelcometext from "./Images/W.svg";
 import githubicon from "./Icons/icons8-github.svg";
 import htmlicon from "./Icons/icons8-html.svg";
 import cssicon from "./Icons/icons8-css.svg";
@@ -28,7 +30,7 @@ export default function MainPage() {
     <>
       <body className="entire-page">
         {/* **************************** NAVBAR ********************************** */}
-        <nav className="navbar navbar-expand-lg bg-light navbar-light">
+        {/* <nav className="navbar navbar-expand-lg  navbar-light">
           <div className="container" id="home">
             <img
               src={logo}
@@ -75,10 +77,96 @@ export default function MainPage() {
               </div>
             </Collapse>
           </div>
+        </nav> */}
+
+        {/* ******************  Dark Navbar ********************************** */}
+
+        <nav className="navbar navbar-expand-lg">
+          <div className="container" id="home">
+            <img
+              src={lightlogo}
+              alt="sage leafs and the word simplysage"
+              width="340"
+              height="100"
+              layout="responsive"
+            />
+            <Button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#example-collapse-text"
+              onClick={() => setOpen(!open)}
+              aria-controls="example-collapse-text"
+              aria-expanded={open}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                boxShadow: "none",
+              }}
+            >
+              <span className="navbar-toggler-icon"></span>
+            </Button>
+            <Collapse in={open}>
+              <div id="example-collapse-text" className="navbar-collapse">
+                <ul className="navbar-nav ms-auto">
+                  <li className="nav-item">
+                    <a href="#skills" className="nav-link">
+                      Skills
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#projects" className="nav-link">
+                      Projects
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#contact" className="nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </Collapse>
+          </div>
         </nav>
+
         {/* *************************** SHOWCASE **************************** */}
-        <section className="bg-light text_dark pt-5 ps-5 pe-5 pb-3 text-center showcase">
-          <div className="container pb-5">
+
+        {/* <section className="text_dark pt-5 ps-5 pe-5 pb-3 text-center showcase">
+          <div className="container">
+            <div className="row align-items-center position-relative">
+              <div className="col-12 col-sm-6 overlap-text">
+                <img
+                  className="img-fluid pt-3"
+                  src={welcometext}
+                  alt="Intro text"
+                  width={800}
+                  height={800}
+                />
+                <div className="subtext">
+                  <p className="subtext-text">
+                    I am passionate about creating interactive and responsive
+                    web applications
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-12 col-sm-6">
+                <img
+                  className="img-fluid d-none d-sm-block my-image overlap-photo"
+                  src={myphoto}
+                  alt="Photo of Ioana"
+                  layout="responsive"
+                />
+              </div>
+            </div>
+          </div>
+        </section> */}
+
+        {/* ******************  Light Showcase  ********************* */}
+
+        {/* <section className="text_dark pt-5 ps-5 pe-5 pb-3 text-center showcase">
+          <div className="container">
             <div className="d-sm-flex align-items-center justify-content-between position-relative">
               <div className="overlap-text">
                 <img
@@ -88,7 +176,37 @@ export default function MainPage() {
                   width={800}
                   height={800}
                 />
-                <div className="subtext">
+                <div className="subtext d-none d-sm-block">
+                  <p className="subtext-text">
+                    I am passionate about creating interactive and responsive
+                    web applications
+                  </p>
+                </div>
+              </div>
+              <img
+                className="img-fluid d-none d-sm-block my-image overlap-photo"
+                src={myphoto}
+                alt="Photo of Ioana"
+                layout="responsive"
+              />
+            </div>
+          </div>
+        </section> */}
+
+        {/* ************************* Dark showcase  ************************** */}
+
+        <section className="text_dark pt-5 ps-5 pe-5 pb-3 text-center showcase">
+          <div className="container">
+            <div className="d-sm-flex align-items-center justify-content-between position-relative">
+              <div className="overlap-text">
+                <img
+                  className="img-fluid pt-3"
+                  src={lightwelcometext}
+                  alt="Intro text"
+                  width={800}
+                  height={800}
+                />
+                <div className="subtext d-none d-sm-block">
                   <p className="subtext-text">
                     I am passionate about creating interactive and responsive
                     web applications
@@ -104,29 +222,7 @@ export default function MainPage() {
             </div>
           </div>
         </section>
-        {/* <section className="bg-light text_dark pt-5 ps-5 pe-5 pb-3 text-center showcase">
-          <div className="container">
-            <div className="d-sm-flex align-items-center justify-content-between">
-              <div>
-                <img
-                  className="img-fluid pt-3"
-                  src={welcometext}
-                  alt="Intro text"
-                  width={1200}
-                  height={1200}
-                />
-              </div>
-              <img
-                className="img-fluid w-50 d-none d-sm-block my-image"
-                src={myphoto}
-                alt="Photo of Ioana"
-                // width="542"
-                // height="550"
-                layout="responsive"
-              />
-            </div>
-          </div>
-        </section> */}
+
         {/* *************************** Skills *************************************** */}
         <section
           className="text_dark text-center skills-section pt-5 pb-5"
@@ -245,13 +341,49 @@ export default function MainPage() {
         {/* *************************** Project To Do List *************************************** */}
         <section className="p-5 text-center projects-title" id="projects">
           <div className="container  pt-2">
+            <h1 className="px-md-5 btn text-light">Projects</h1>
+          </div>
+        </section>
+        <section className="p-5 to-do-list">
+          <div className="container">
+            <div className="row align-items-centre justify-content-between">
+              <div className="col-md">
+                <figure>
+                  <a
+                    href="https://to-do-v3-ax6i.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="desktopimage zoom-effect"
+                      src={desktop}
+                      alt="Desktop"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div className="col-md-6 p-md-5 pt-lg-0 text-center">
+                <h1 className="pb-3 text-light">To do list</h1>
+                <h3 className="text-light">
+                  A responsive and user-friendly to-do list application to help
+                  you manage your tasks efficiently, ensuring you stay
+                  productive whether you're on a desktop or mobile device.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* 
+
+        <section className="p-5 text-center projects-title" id="projects">
+          <div className="container  pt-2">
             <h1 className="px-md-5 btn">Projects</h1>
           </div>
         </section>
         <section className="p-5 to-do-list">
           <div className="container">
             <div className="row align-items-centre justify-content-between">
-              <div className="col-md add-shine">
+              <div className="col-md">
                 <figure>
                   <img className="desktopimage" src={desktop} alt="Desktop" />
                 </figure>
@@ -266,23 +398,29 @@ export default function MainPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* ******************************* Transport Trends Chart ********************************************** */}
         <section className="p-5 other-project">
           <div className="container pt-5 pb-5">
             <div className="row align-items-centre justify-content-between">
-              <div className="col-md order-md-2 add-shine ">
+              <div className="col-md order-md-2">
                 <figure>
-                  <img
-                    className="desktopimage"
-                    src={bumpchart}
-                    alt="Nivo chart"
-                  />
+                  <a
+                    href="https://nivo-carbon-intensity.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="desktopimage zoom-effect"
+                      src={bumpchart}
+                      alt="Nivo chart"
+                    />
+                  </a>
                 </figure>
               </div>
               <div className="col-md-6 p-md-5 text-center">
-                <h1 className="pb-3 text-light">Transport Trends Chart</h1>
-                <h3 className="text-light">
+                <h1 className="pb-3 text-dark">Transport Trends Chart</h1>
+                <h3 className="text-dark">
                   An interactive and colorful bump chart displaying transport
                   data over time. Fully responsive for both desktop and mobile,
                   it offers an intuitive way to explore and customize transport
@@ -293,6 +431,33 @@ export default function MainPage() {
           </div>
         </section>
         {/* ************************************ Story Pointing Game *********************************************** */}
+        <section className="p-5 to-do-list">
+          <div className="container pt-5 pb-5">
+            <div className="row align-items-centre justify-content-between">
+              <div className="col-md">
+                <figure>
+                  <img
+                    className="desktopimage zoom-effect"
+                    src={storypointing}
+                    alt="Story Pointing Game"
+                  />
+                </figure>
+              </div>
+              <div className="col-md-6 p-md-5 pt-lg-0 text-center">
+                <h1 className="pb-3 pt-3 text-light">Story Pointing Game</h1>
+                <h3 className="text-light">
+                  A collaborative tool for agile teams to estimate user stories
+                  using Fibonacci points. Multiple players can select and reveal
+                  points together. Designed for desktop use, it streamlines the
+                  estimation process.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </body>
+
+      {/* 
         <section className="p-5 to-do-list">
           <div className="container pt-5 pb-5">
             <div className="row align-items-centre justify-content-between">
@@ -317,7 +482,7 @@ export default function MainPage() {
             </div>
           </div>
         </section>
-      </body>
+      </body> */}
       {/* *****************************   Footer     ********************************************* */}
       <section
         className="text_dark pt-5 text-center skills-section bottom-section"

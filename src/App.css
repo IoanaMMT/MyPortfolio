@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
+.entire-page {
+  background-color:#f3f5f9;
+}
 .nav-item {
   font-size: 1.2rem; 
   font-weight: bold; 
   padding-left: 2rem;
-  text-decoration-color: black;
+}
+
+a.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  background-color: #181f1c;
 }
 
 /* } This prop was added to make the collapse transition smoother. Added as well a div arround the immediate collapse child and specified the margin and padding zero. what it does, it moves the button back and forward and not displaying the collapse. Still not working :( */
@@ -18,12 +27,13 @@
 
 .showcase {
   position: relative;
+  background-color:#181f1c ;
 }
 
 .overlap-text {
   position: relative;
-  z-index: 1; /* Bring the text in front */
-  margin-right: -150px; /* Adjust this value to overlap more/less */
+  z-index: 1; 
+  margin-right: -150px; 
   margin-left: 20px;
   margin-bottom: 200px;
 }
@@ -37,7 +47,7 @@
 .subtext-text {
   font-size: 1.2rem;
   letter-spacing:0.1rem ;
-  color: #315c2b;
+  color: #9ea93f;
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -46,20 +56,19 @@
 
 .overlap-photo {
   position: relative;
-  z-index: 0; /* Keep the image behind */
-  margin-left: -100px; /* Adjust this value to overlap more/less */
+  z-index: 0; 
+  margin-left: -100px; 
   margin-right: 270px;
 }
 
 .my-image {
-  opacity: 0.5;
-  /* border-radius: 350px; */
+  opacity: 0.3;
   padding-bottom: 3rem;
   width: 30%;
   height: auto;
 }
 
-
+/* **************  Skills Section  ***************** */
 
 .skills-section {
   background-color: #e1d6c4;
@@ -70,7 +79,7 @@
 }
 
 .other-project {
-  background-color: #7c96a0;
+  background-color: #e1d6c4;
 }
 
 h3 {
@@ -115,10 +124,17 @@ h3 {
   background-color: #e1d6c4;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
-              0 6px 20px rgba(0, 0, 0, 0.19); /* Adds depth */
-  transform: translateZ(0); /* Flat surface initially */
+              0 6px 20px rgba(0, 0, 0, 0.19); 
+  transform: translateZ(0); 
 }
 
+
+/* ****************************  Projects section  ********************* */
+
+.projects-title, 
+.to-do-list {
+  background-color: #181f1c;
+}
 
 /* ************ experiment ******** */
 
@@ -135,39 +151,6 @@ h3 {
 	transform: scale(1);
 }
 
-
-/* Shine */
-.add-shine figure {
-	position: relative;
-}
-.add-shine figure::before {
-	position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 50%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
-}
-.add-shine figure:hover::before {
-	-webkit-animation: shine .75s;
-	animation: shine .75s;
-}
-@-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-@keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
 
 
 /* ***********  Hover over section titles  ********** */
@@ -224,22 +207,38 @@ h1.btn {
 }
 
 
+/* Media query for smaller screens */
+
+
+@media (max-width: 576px) {
+  .overlap-text {
+    margin: 0; 
+    display: flex;
+    align-content: center;
+    padding-bottom: 20%;
+  }
+
+  .overlap-text img {
+    width: 100%; 
+    height: auto;
+  }
+
+}
 
 
 
+/* ************************  3d hover effect  ******************** */
 
+.zoom-effect {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+  width: 100%; /* Make sure the image takes the full width of the container */
+  height: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.zoom-effect:hover {
+  transform: scale(1.1); /* 120% zoom when hovered */
+  z-index: 1; /* Brings the image on top when zoomed */
+}
 
 /* ****************** Navbar  ***************************** */
 
