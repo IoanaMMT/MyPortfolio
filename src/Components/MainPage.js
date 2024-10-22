@@ -228,11 +228,11 @@ export default function MainPage() {
           className="text_dark text-center skills-section pt-5 pb-5"
           id="skills"
         >
-          <div className="container pt-5 pb-5">
-            <div className="row">
-              <div className="col-md-6 order-md-2 align-self-center mb-5 mb-md-0  ">
-                <div className="my-skills-text">
-                  <h1 className="px-md-5 btn">My Skills</h1>
+          <div className="container pt-5 pb-5 ">
+            <div className="row ">
+              <div className="col-md-6 order-md-2 align-self-center mb-5 mb-md-0 side-text">
+                <div className="my-skills-text  ">
+                  <h1 className="px-md-5 skills-btn ">My Skills</h1>
                 </div>
               </div>
               <div className="col-md-6 order-md-1">
@@ -340,8 +340,10 @@ export default function MainPage() {
         </section>
         {/* *************************** Project To Do List *************************************** */}
         <section className="p-5 text-center projects-title" id="projects">
-          <div className="container  pt-2">
-            <h1 className="px-md-5 btn text-light">Projects</h1>
+          <div className="container  pt-2 side-text">
+            <h1 className="px-md-5 projects-btn text-light my-project-text">
+              Projects
+            </h1>
           </div>
         </section>
         <section className="p-5 to-do-list">
