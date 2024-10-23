@@ -85,6 +85,7 @@ export default function MainPage() {
           <div className="container" id="home">
             <img
               src={lightlogo}
+              className="simplysagelogo"
               alt="sage leafs and the word simplysage"
               width="340"
               height="100"
