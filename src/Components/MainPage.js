@@ -506,7 +506,11 @@ export default function MainPage() {
                 </a>
               </li>
               <li>
-                <a>
+                <a
+                  href="https://www.linkedin.com/in/ioana-morosanu-30a899198/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <CiLinkedin size={30} />
                 </a>
               </li>
