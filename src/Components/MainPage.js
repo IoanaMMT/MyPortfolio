@@ -496,13 +496,21 @@ export default function MainPage() {
             {/* Social media icons */}
             <ul className="social-media-icons d-flex justify-content-center">
               <li>
-                <a>
-                  <FaXTwitter size={30} />
+                <a
+                  href="https://x.com/SimplySageK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaXTwitter size={40} />
                 </a>
               </li>
               <li className="me-5 ms-5">
-                <a>
-                  <IoLogoGithub size={30} />
+                <a
+                  href="https://github.com/IoanaMMT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IoLogoGithub size={40} />
                 </a>
               </li>
               <li>
@@ -511,7 +519,7 @@ export default function MainPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <CiLinkedin size={30} />
+                  <CiLinkedin size={40} />
                 </a>
               </li>
             </ul>
