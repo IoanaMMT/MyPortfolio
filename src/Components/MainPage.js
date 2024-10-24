@@ -492,7 +492,7 @@ export default function MainPage() {
         id="contact"
       >
         <div className="container">
-          <div className="row justify-content-center align-items-center">
+          <div className="row justify-content-center align-items-center media-icons">
             {/* Social media icons */}
             <ul className="social-media-icons d-flex justify-content-center">
               <li>
