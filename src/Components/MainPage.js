@@ -340,42 +340,45 @@ export default function MainPage() {
           </div>
         </section>
         {/* *************************** Project To Do List *************************************** */}
-        <section className="p-5 text-center projects-title" id="projects">
-          <div className="container  pt-2 side-text">
-            <h1 className="px-md-5 projects-btn text-light my-project-text">
-              Projects
-            </h1>
-          </div>
-        </section>
-        <section className="p-5 to-do-list">
-          <div className="container">
-            <div className="row align-items-centre justify-content-between">
-              <div className="col-md">
-                <figure>
-                  <a
-                    href="https://to-do-v3-ax6i.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      className="desktopimage zoom-effect"
-                      src={desktop}
-                      alt="Desktop"
-                    />
-                  </a>
-                </figure>
-              </div>
-              <div className="col-md-6 p-md-5 pt-lg-0 text-center">
-                <h1 className="pb-3 text-light">To do list</h1>
-                <h3 className="text-light">
-                  A responsive and user-friendly to-do list application to help
-                  you manage your tasks efficiently, ensuring you stay
-                  productive whether you're on a desktop or mobile device.
-                </h3>
+
+        <div className="projects-first-page">
+          <section className="p-5 text-center projects-title" id="projects">
+            <div className="container  pt-2 side-text">
+              <h1 className="px-md-5 projects-btn text-light my-project-text">
+                Projects
+              </h1>
+            </div>
+          </section>
+          <section className="p-5 to-do-list">
+            <div className="container">
+              <div className="row align-items-centre justify-content-between">
+                <div className="col-md">
+                  <figure>
+                    <a
+                      href="https://to-do-v3-ax6i.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="desktopimage zoom-effect"
+                        src={desktop}
+                        alt="Desktop"
+                      />
+                    </a>
+                  </figure>
+                </div>
+                <div className="col-md-6 p-md-5 pt-lg-0 text-center">
+                  <h1 className="pb-3 text-light">To do list</h1>
+                  <h3 className="text-light">
+                    A responsive and user-friendly to-do list application to
+                    help you manage your tasks efficiently, ensuring you stay
+                    productive whether you're on a desktop or mobile device.
+                  </h3>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
         {/* 
 
         <section className="p-5 text-center projects-title" id="projects">
@@ -434,7 +437,7 @@ export default function MainPage() {
           </div>
         </section>
         {/* ************************************ Story Pointing Game *********************************************** */}
-        <section className="p-5 to-do-list">
+        <section className="p-5 to-do-list story-pointing">
           <div className="container pt-5 pb-5">
             <div className="row align-items-centre justify-content-between">
               <div className="col-md">

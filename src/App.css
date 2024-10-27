@@ -81,6 +81,10 @@ a.nav-link:focus, a.nav-link:hover {
 
 .skills-section {
   background-color: #e1d6c4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .skills-icon {
   background-color: #e1d6c4;
@@ -175,6 +179,22 @@ h3 {
 .to-do-list {
   background-color: #181f1c;
 }
+
+.projects-first-page, .story-pointing {
+  min-height: 100vh;
+  background: #181f1c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.other-project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 /* ********** Hover over Project section title  ********* */
 
@@ -285,52 +305,6 @@ h1.skills-btn {
   height: 100%;
 }
 
-/* Media query for smaller screens */
-
-
-@media (max-width: 576px) {
-  .overlap-text {
-    margin: 0; 
-    display: flex;
-    align-content: center;
-    padding-bottom: 20%;
-  }
-
-  .overlap-text img {
-    width: 100%; 
-    height: auto;
-  }
-
-  .my-skills-text {
-    width: 80%;
-    
-  }
-
-  .skills-section {
-    margin-top: -20px;
-    margin-bottom: -10px;
-  }
-
-  .my-project-text {
-    width: 100%;
-  }
-
-  .simplysagelogo {
-    width: 40%;
-  }
-
-  .showcase img {
-    padding-top: 1;
-  }
-
-  .overlap-text img {
-    transform: translateY(-10px); /* Moves the image up by 20px */
-    transform: translateX(-20px);
-    margin-bottom: 100px;
-}
-
-
-}
 
 
 
@@ -400,6 +374,63 @@ h1.skills-btn {
   box-shadow: 0 0 15px #bfff10;
   text-shadow: 0 0 15px #40ff10;
 }
+
+/* ************* Footer  ************** */
+
+.bottom-section {
+  min-height: 20vh!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Media query for smaller screens */
+
+
+@media (max-width: 576px) {
+  .overlap-text {
+    margin: 0; 
+    display: flex;
+    align-content: center;
+    padding-bottom: 20%;
+  }
+
+  .overlap-text img {
+    width: 100%; 
+    height: auto;
+  }
+
+  .my-skills-text {
+    width: 80%;
+    
+  }
+
+  .my-project-text {
+    width: 100%;
+  }
+
+  .simplysagelogo {
+    width: 40%;
+  }
+
+  .showcase img {
+    padding-top: 1;
+  }
+
+  .overlap-text img {
+    transform: translateY(10px); 
+    transform: translateX(-20px);
+    margin-bottom: 100px;
+}
+ 
+.showcase {
+  min-height: 100vh;
+}
+
+
+
+}
+
 /* ****************** Navbar  ***************************** */
 
 /* .navigation {
