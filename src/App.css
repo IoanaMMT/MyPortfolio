@@ -59,7 +59,7 @@ a.nav-link:focus, a.nav-link:hover {
   color: #9ea93f;
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -80,7 +80,8 @@ a.nav-link:focus, a.nav-link:hover {
 /* *******************  Skills Section  ********************* */
 
 .skills-section {
-  background-color: #e1d6c4;
+  /* background-color: #e1d6c4; */
+  background: linear-gradient(300deg, #e1d6c4 50%, #181f1c);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -92,14 +93,15 @@ a.nav-link:focus, a.nav-link:hover {
 }
 
 .other-project {
-  background-color: #e1d6c4;
+  /* background-color: #e1d6c4; */
+  background: linear-gradient(40deg, #e1d6c4 50%, #181f1c);
 }
 
-h3 {
+
+h3, .text-weight {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
-
 
 
 .desktopimage {
@@ -392,12 +394,7 @@ h1.skills-btn {
     margin: 0; 
     display: flex;
     align-content: center;
-    padding-bottom: 20%;
-  }
-
-  .overlap-text img {
-    width: 100%; 
-    height: auto;
+    /* padding-bottom: 20%; */
   }
 
   .my-skills-text {
@@ -418,137 +415,17 @@ h1.skills-btn {
   }
 
   .overlap-text img {
+    width: 100%; 
+    height: auto;
     transform: translateY(10px); 
     transform: translateX(-20px);
-    margin-bottom: 100px;
+    margin-bottom: -600px; 
 }
  
 .showcase {
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 
 
 }
-
-/* ****************** Navbar  ***************************** */
-
-/* .navigation {
-  background-color: #e3d3c3;
-  margin-bottom: 0;
-}
-.nav_bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 3rem 0 3rem;
-  max-height: fit-content;
-}
-
-.nav_list_container {
-  align-items: center;
-}
-
-.nav_list {
-  display: flex;
-  justify-content: space-around;
-  gap: 3rem;
-  margin-top: 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-}
-
-ul {
-  list-style: none;
-  list-style-type: none;
-}
-
-.nav_list li a {
-  text-decoration: none;
-  color: black;
-} */
-
-/* ******************** Intro section ************************** */
-
-/* .intro_section {
-  display: flex;
-  padding: 6rem 0 8rem 0;
-  background-color: #e3d3c3;
-}
-
-.intro_text_section {
-  max-width: 35%;
-  margin: 10rem;
-  text-align: center;
-  line-height: 2.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-}
-
-.my_photo {
-  opacity: 0.4;
-}
-
-.my_photo img {
-  border-radius: 200px;
-} */
-
-/* ******************** Skills section ************************** */
-/* .skillSection {
-  display: flex;
-  direction: row;
-  justify-content: space-between;
-  padding-top: 5rem;
-}
-
-.listedSkills {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
-
-}
-
-.card {
-  text-align: center;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-}
-
-.skills_text_section {
-  max-width: 35%;
-  margin: 10rem;
-  text-align: center;
-  line-height: 2.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-} */
-
-/* *************************** Projects Section ************************** */
-
-/* .projects_section {
-  display: flex;
-  direction: row;
-  justify-content: space-between;
-  padding-top: 5rem;
-  background-color: #e3d3c3;
-}
-
-.projects_text {
-  max-width: 35%;
-  margin: 10rem;
-  text-align: center;
-  line-height: 2.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-} */

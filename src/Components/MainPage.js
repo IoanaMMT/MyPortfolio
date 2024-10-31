@@ -29,56 +29,6 @@ export default function MainPage() {
   return (
     <>
       <body className="entire-page">
-        {/* **************************** NAVBAR ********************************** */}
-        {/* <nav className="navbar navbar-expand-lg  navbar-light">
-          <div className="container" id="home">
-            <img
-              src={logo}
-              alt="sage leafs and the word simplysage"
-              width="170"
-              height="50"
-              layout="responsive"
-            />
-            <Button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#example-collapse-text"
-              onClick={() => setOpen(!open)}
-              aria-controls="example-collapse-text"
-              aria-expanded={open}
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                boxShadow: "none",
-              }}
-            >
-              <span className="navbar-toggler-icon"></span>
-            </Button>
-            <Collapse in={open}>
-              <div id="example-collapse-text" className="navbar-collapse">
-                <ul className="navbar-nav ms-auto">
-                  <li className="nav-item">
-                    <a href="#skills" className="nav-link">
-                      Skills
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="#projects" className="nav-link">
-                      Projects
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="#contact" className="nav-link">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </Collapse>
-          </div>
-        </nav> */}
-
         {/* ******************  Dark Navbar ********************************** */}
 
         <nav className="navbar navbar-expand-lg">
@@ -369,7 +319,7 @@ export default function MainPage() {
                 </div>
                 <div className="col-md-6 p-md-5 pt-lg-0 text-center">
                   <h1 className="pb-3 text-light">To do list</h1>
-                  <h3 className="text-light">
+                  <h3 className="text-light text-weight">
                     A responsive and user-friendly to-do list application to
                     help you manage your tasks efficiently, ensuring you stay
                     productive whether you're on a desktop or mobile device.
@@ -381,30 +331,6 @@ export default function MainPage() {
         </div>
         {/* 
 
-        <section className="p-5 text-center projects-title" id="projects">
-          <div className="container  pt-2">
-            <h1 className="px-md-5 btn">Projects</h1>
-          </div>
-        </section>
-        <section className="p-5 to-do-list">
-          <div className="container">
-            <div className="row align-items-centre justify-content-between">
-              <div className="col-md">
-                <figure>
-                  <img className="desktopimage" src={desktop} alt="Desktop" />
-                </figure>
-              </div>
-              <div className="col-md-6 p-md-5 pt-lg-0 text-center">
-                <h1 className="pb-3 text-dark">To do list</h1>
-                <h3 className="text-dark">
-                  A responsive and user-friendly to-do list application to help
-                  you manage your tasks efficiently, ensuring you stay
-                  productive whether you're on a desktop or mobile device.
-                </h3>
-              </div>
-            </div>
-          </div>
-        </section> */}
         {/* ******************************* Transport Trends Chart ********************************************** */}
         <section className="p-5 other-project">
           <div className="container pt-5 pb-5">
@@ -426,7 +352,7 @@ export default function MainPage() {
               </div>
               <div className="col-md-6 p-md-5 text-center">
                 <h1 className="pb-3 text-dark">Transport Trends Chart</h1>
-                <h3 className="text-dark">
+                <h3 className="text-dark text-weight">
                   An interactive and colorful bump chart displaying transport
                   data over time. Fully responsive for both desktop and mobile,
                   it offers an intuitive way to explore and customize transport
@@ -451,7 +377,7 @@ export default function MainPage() {
               </div>
               <div className="col-md-6 p-md-5 pt-lg-0 text-center">
                 <h1 className="pb-3 pt-3 text-light">Story Pointing Game</h1>
-                <h3 className="text-light">
+                <h3 className="text-light text-weight">
                   A collaborative tool for agile teams to estimate user stories
                   using Fibonacci points. Multiple players can select and reveal
                   points together. Designed for desktop use, it streamlines the
