@@ -91,7 +91,7 @@ position: relative;
 
 .d-sm-flex {
   display: flex;
-  flex-direction: row; /* Side-by-side on desktop */
+  flex-direction: row; 
 }
 
 /* *******************  Skills Section  ********************* */
@@ -326,13 +326,13 @@ h1.skills-btn {
 /* ************************  3d hover effect  ******************** */
 
 .zoom-effect {
-  transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+  transition: transform 0.3s ease-in-out; 
   width: 100%; /* Make sure the image takes the full width of the container */
   height: auto;
 }
 
 .zoom-effect:hover {
-  transform: scale(1.1); /* 120% zoom when hovered */
+  transform: scale(1.1); 
   z-index: 1; /* Brings the image on top when zoomed */
 }
 
@@ -407,7 +407,6 @@ h1.skills-btn {
     margin: 0; 
     display: flex;
     align-content: center;
-    /* padding-bottom: 20%; */
   }
 
   .my-skills-text {
@@ -436,28 +435,28 @@ h1.skills-btn {
 }
  
 .showcase {
-  min-height: 90vh;
+  min-height: 88vh;
 }
 
 .showcasedots {
-  margin-left: 150px;
+  margin-left: 60px;
   margin-right: auto;
-  margin-top: 500px; /* Adjust as needed for spacing */
+  margin-top: 500px; 
   display: block;
-  width: 100%; /* Make it smaller if necessary */
-  position: static; /* Position it normally in the flow */
+  width: 100%; 
+  position: static; 
 }
 
 .d-sm-flex {
   flex-direction: row;
-  flex-direction: column-reverse; /* Stacks .subtext below on mobile */
+  flex-direction: column-reverse; 
   align-items: center;
 }
 
 .subtext {
-  margin-top: 350px; /* Spacing between Welcome text and subtext */
-  text-align: center; /* Centers the text on mobile */
-  width: 100%; /* Ensures full width */
+  margin-top: 350px; 
+  text-align: center; 
+  width: 100%; 
   margin-left: 0;
   position: absolute;
 
