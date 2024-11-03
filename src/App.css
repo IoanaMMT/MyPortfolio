@@ -37,6 +37,7 @@ a.nav-link:focus, a.nav-link:hover {
 .showcase {
   position: relative;
   background-color:#181f1c ;
+  min-height: 90vh;
 }
 
 .overlap-text {
@@ -77,11 +78,27 @@ a.nav-link:focus, a.nav-link:hover {
   height: auto;
 }
 
+.showcasedots {
+opacity: 0.1;
+position: relative;
+  z-index: 0; 
+  margin-left: 1000px; 
+  margin-right: 270px;
+  margin-top: -300px ;
+}
+
+
+
+.d-sm-flex {
+  display: flex;
+  flex-direction: row; /* Side-by-side on desktop */
+}
+
 /* *******************  Skills Section  ********************* */
 
 .skills-section {
   /* background-color: #e1d6c4; */
-  background: linear-gradient(300deg, #e1d6c4 50%, #181f1c);
+  background: linear-gradient(225deg, #e1d6c4 50%, #181f1c);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -159,21 +176,6 @@ h3, .text-weight {
   width: 25%;
 }
 
-
-/* ********* Hover effect over the Skills section ******** */
-
-
-
-.skills-icon figure img {
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.skills-icon figure:hover img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
 
 /* ****************************  Projects section  ********************* */
 
@@ -254,7 +256,18 @@ h1.projects-btn {
 
 
 
-/* ***********  Hover over kills section titles  ********** */
+/* ***********  Skills section titles  ********** */
+
+.skills-icon figure img {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.skills-icon figure:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
 
 
 .skills-btn {
@@ -419,13 +432,38 @@ h1.skills-btn {
     height: auto;
     transform: translateY(10px); 
     transform: translateX(-20px);
-    margin-bottom: -600px; 
+    margin-bottom: -400px; 
 }
  
 .showcase {
   min-height: 90vh;
 }
 
+.showcasedots {
+  margin-left: 150px;
+  margin-right: auto;
+  margin-top: 500px; /* Adjust as needed for spacing */
+  display: block;
+  width: 100%; /* Make it smaller if necessary */
+  position: static; /* Position it normally in the flow */
+}
 
+.d-sm-flex {
+  flex-direction: row;
+  flex-direction: column-reverse; /* Stacks .subtext below on mobile */
+  align-items: center;
+}
+
+.subtext {
+  margin-top: 350px; /* Spacing between Welcome text and subtext */
+  text-align: center; /* Centers the text on mobile */
+  width: 100%; /* Ensures full width */
+  margin-left: 0;
+  position: absolute;
+
+}
+.subtext-text {
+  font-weight: 100;
+}
 
 }

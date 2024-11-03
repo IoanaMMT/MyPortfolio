@@ -20,6 +20,7 @@ import figma from "./Icons/icons8-figma.svg";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
+import showcasedots from "./Decoratives/Showcase-dots.svg";
 import "../App.css";
 
 export default function MainPage() {
@@ -83,13 +84,15 @@ export default function MainPage() {
 
         {/* *************************** SHOWCASE **************************** */}
 
-        {/* <section className="text_dark pt-5 ps-5 pe-5 pb-3 text-center showcase">
+        {/* ************************* Dark showcase  ************************** */}
+
+        <section className="text_dark pt-5 ps-5 pe-5 pb-3 text-center showcase">
           <div className="container">
-            <div className="row align-items-center position-relative">
-              <div className="col-12 col-sm-6 overlap-text">
+            <div className="d-sm-flex align-items-center justify-content-between position-relative">
+              <div className="overlap-text ">
                 <img
                   className="img-fluid pt-3"
-                  src={welcometext}
+                  src={lightwelcometext}
                   alt="Intro text"
                   width={800}
                   height={800}
@@ -101,39 +104,6 @@ export default function MainPage() {
                   </p>
                 </div>
               </div>
-
-              <div className="col-12 col-sm-6">
-                <img
-                  className="img-fluid d-none d-sm-block my-image overlap-photo"
-                  src={myphoto}
-                  alt="Photo of Ioana"
-                  layout="responsive"
-                />
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        {/* ******************  Light Showcase  ********************* */}
-
-        {/* <section className="text_dark pt-5 ps-5 pe-5 pb-3 text-center showcase">
-          <div className="container">
-            <div className="d-sm-flex align-items-center justify-content-between position-relative">
-              <div className="overlap-text">
-                <img
-                  className="img-fluid pt-3"
-                  src={welcometext}
-                  alt="Intro text"
-                  width={800}
-                  height={800}
-                />
-                <div className="subtext d-none d-sm-block">
-                  <p className="subtext-text">
-                    I am passionate about creating interactive and responsive
-                    web applications
-                  </p>
-                </div>
-              </div>
               <img
                 className="img-fluid d-none d-sm-block my-image overlap-photo"
                 src={myphoto}
@@ -141,36 +111,14 @@ export default function MainPage() {
                 layout="responsive"
               />
             </div>
-          </div>
-        </section> */}
-
-        {/* ************************* Dark showcase  ************************** */}
-
-        <section className="text_dark pt-5 ps-5 pe-5 pb-3 text-center showcase">
-          <div className="container">
-            <div className="d-sm-flex align-items-center justify-content-between position-relative">
-              <div className="overlap-text">
-                <img
-                  className="img-fluid pt-3"
-                  src={lightwelcometext}
-                  alt="Intro text"
-                  width={800}
-                  height={800}
-                />
-                <div className="subtext d-none d-sm-block">
-                  <p className="subtext-text">
-                    I am passionate about creating interactive and responsive
-                    web applications
-                  </p>
-                </div>
-              </div>
-              <img
-                className="img-fluid d-none d-sm-block my-image overlap-photo"
-                src={myphoto}
-                alt="Photo of Ioana"
-                layout="responsive"
-              />
-            </div>
+            <img
+              className="img-fluid showcasedots"
+              src={showcasedots}
+              alt="rectangular pattern dots"
+              layout="responsive"
+              width={700}
+              height={700}
+            />
           </div>
         </section>
 
