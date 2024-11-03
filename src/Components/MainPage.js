@@ -21,6 +21,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
 import showcasedots from "./Decoratives/Showcase-dots.svg";
+import skillsdotsright from "./Decoratives/Skills-dots-right.svg";
 import "../App.css";
 
 export default function MainPage() {
@@ -116,8 +117,8 @@ export default function MainPage() {
               src={showcasedots}
               alt="rectangular pattern dots"
               layout="responsive"
-              width={700}
-              height={700}
+              width={400}
+              height={400}
             />
           </div>
         </section>
@@ -127,6 +128,15 @@ export default function MainPage() {
           className="text_dark text-center skills-section pt-5 pb-5"
           id="skills"
         >
+          <img
+            className="img-fluid skillsdotsright"
+            src={skillsdotsright}
+            alt="dots patterns"
+            layout="responsive"
+            width={900}
+            height={900}
+          />
+
           <div className="container pt-5 pb-5 ">
             <div className="row ">
               <div className="col-md-6 order-md-2 align-self-center mb-5 mb-md-0 side-text">
