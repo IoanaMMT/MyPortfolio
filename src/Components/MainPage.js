@@ -22,6 +22,8 @@ import { IoLogoGithub } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
 import showcasedots from "./Decoratives/Showcase-dots.svg";
 import skillsdotsright from "./Decoratives/Skills-dots-right.svg";
+import projectsdots from "./Decoratives/Projects-dots.svg";
+import nivolines from "./Decoratives/Nivo-lines.svg";
 import "../App.css";
 
 export default function MainPage() {
@@ -250,6 +252,14 @@ export default function MainPage() {
         {/* *************************** Project To Do List *************************************** */}
 
         <div className="projects-first-page">
+          <img
+            className="img-fluid projectsdots"
+            src={projectsdots}
+            alt="semicircle pattern dots"
+            layout="responsive"
+            width={600}
+            height={600}
+          />
           <section className="p-5 text-center projects-title" id="projects">
             <div className="container  pt-2 side-text">
               <h1 className="px-md-5 projects-btn text-light my-project-text">
@@ -257,10 +267,10 @@ export default function MainPage() {
               </h1>
             </div>
           </section>
-          <section className="p-5 to-do-list">
-            <div className="container">
+          <section className="p-5 to-do-list  ">
+            <div className="container ">
               <div className="row align-items-centre justify-content-between">
-                <div className="col-md">
+                <div className="col-md to-do-desktop">
                   <figure>
                     <a
                       href="https://to-do-v3-ax6i.vercel.app/"
@@ -268,7 +278,7 @@ export default function MainPage() {
                       rel="noopener noreferrer"
                     >
                       <img
-                        className="desktopimage zoom-effect"
+                        className="desktopimage zoom-effect  "
                         src={desktop}
                         alt="Desktop"
                       />
@@ -291,9 +301,17 @@ export default function MainPage() {
 
         {/* ******************************* Transport Trends Chart ********************************************** */}
         <section className="p-5 other-project">
+          <img
+            className="img-fluid nivolines"
+            src={nivolines}
+            alt="lines patterns"
+            layout="responsive"
+            width={400}
+            height={410}
+          />
           <div className="container pt-5 pb-5">
             <div className="row align-items-centre justify-content-between">
-              <div className="col-md order-md-2">
+              <div className="col-md order-md-2 to-do-desktop">
                 <figure>
                   <a
                     href="https://nivo-carbon-intensity.vercel.app/"
