@@ -489,6 +489,13 @@ h1.skills-btn {
   min-height: 80vh;
 }
 
+.skills-section,
+.story-pointing,
+.projects-first-page,
+.other-project {
+  min-height: 90vh;
+}
+
 .showcasedots {
   position: relative;
   margin-left: inherit;
@@ -543,7 +550,7 @@ h1.skills-btn {
   margin-right:0;
   margin-top: clamp(-10px, -10vh, -10px);
   max-width: 100%;
-  max-height: 101%;
+  max-height: 90%;
 
 }
 
