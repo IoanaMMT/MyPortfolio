@@ -95,7 +95,7 @@ export default function MainPage() {
             <div className="d-sm-flex align-items-center justify-content-between position-relative">
               <div className="overlap-text ">
                 <img
-                  className="img-fluid pt-3"
+                  className="img-fluid pt-3 welcometext"
                   src={lightwelcometext}
                   alt="Intro text"
                   width={800}
