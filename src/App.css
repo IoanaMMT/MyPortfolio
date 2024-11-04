@@ -230,6 +230,16 @@ h3, .text-weight {
     max-height: 101%;
   }
 
+  .pokerdots {
+    opacity: 0.5;
+    position: absolute;
+    align-self: flex-start;
+    z-index: 0; 
+    margin-right:0;
+    margin-top: 0 ;
+    max-width: 100%;
+    }
+
 
 /* ********** Hover over Project section title  ********* */
 
@@ -470,8 +480,8 @@ h1.skills-btn {
 }
 
 .showcasedots {
-  margin-left: 60px;
-  margin-right: auto;
+  position: relative;
+  margin-left: inherit;
   margin-top: 500px; 
   display: block;
   width: 100%; 
@@ -480,7 +490,7 @@ h1.skills-btn {
 
 .skillsdotsright {
     margin-right:0;
-    margin-top: -700px ;
+    margin-top: clamp(-700px, -100vh, -100px) ;
     max-width: 100%;
   }
 
@@ -508,7 +518,7 @@ h1.skills-btn {
   align-self: flex-end;
   z-index: 0; 
   margin-right:0;
-  margin-top:100px;
+  margin-top:clamp(-10px, -10vh, -10px);
   }
 
  .to-do-desktop {
@@ -521,11 +531,21 @@ h1.skills-btn {
   align-self: flex-end;
   z-index: 0; 
   margin-right:0;
-  margin-top: 1px ;
+  /* margin-top: 1px ; */
+  margin-top: clamp(-10px, -10vh, -10px);
   max-width: 100%;
   max-height: 101%;
 
 }
+
+.pokerdots{
+  opacity: 0.5;
+  position: absolute;
+  margin-right: inherit;
+  z-index: 0; 
+  margin-top: -100%;
+  max-width: 80% !important;
+  }
 
 
 

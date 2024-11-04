@@ -24,6 +24,7 @@ import showcasedots from "./Decoratives/Showcase-dots.svg";
 import skillsdotsright from "./Decoratives/Skills-dots-right.svg";
 import projectsdots from "./Decoratives/Projects-dots.svg";
 import nivolines from "./Decoratives/Nivo-lines.svg";
+import pokerdots from "./Decoratives/Poker-dots.svg";
 import "../App.css";
 
 export default function MainPage() {
@@ -340,9 +341,17 @@ export default function MainPage() {
         </section>
         {/* ************************************ Story Pointing Game *********************************************** */}
         <section className="p-5 to-do-list story-pointing">
+          <img
+            className="img-fluid pokerdots"
+            src={pokerdots}
+            alt="dots patterns"
+            layout="responsive"
+            width={700}
+            height={700}
+          />
           <div className="container pt-5 pb-5">
             <div className="row align-items-centre justify-content-between">
-              <div className="col-md">
+              <div className="col-md to-do-desktop">
                 <figure>
                   <img
                     className="desktopimage zoom-effect"
