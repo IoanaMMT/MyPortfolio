@@ -115,14 +115,14 @@ export default function MainPage() {
                 layout="responsive"
               />
             </div>
-            <img
+            {/* <img
               className="img-fluid showcasedots"
               src={showcasedots}
               alt="rectangular pattern dots"
               layout="responsive"
               width={400}
               height={400}
-            />
+            /> */}
           </div>
         </section>
 
