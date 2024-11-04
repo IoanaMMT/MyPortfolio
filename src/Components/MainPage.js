@@ -415,7 +415,7 @@ export default function MainPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaXTwitter size={40} />
+                  <FaXTwitter size={40} className="twitter mb-2" />
                 </a>
               </li>
               <li className="me-5 ms-5">
@@ -424,7 +424,7 @@ export default function MainPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <IoLogoGithub size={40} />
+                  <IoLogoGithub size={40} className="github mb-2" />
                 </a>
               </li>
               <li>
@@ -433,7 +433,7 @@ export default function MainPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <CiLinkedin size={40} />
+                  <CiLinkedin size={40} className="linkedin mb-2" />
                 </a>
               </li>
             </ul>
