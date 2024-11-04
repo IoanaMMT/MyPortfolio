@@ -215,11 +215,10 @@ h3, .text-weight {
 .projectsdots {
   opacity: 0.2;
   position: absolute;
-  align-self: flex-end;
+  display: flex;
+  align-self: end;
   z-index: 0; 
-  margin-right:0;
-  margin-top: -100px ;
-  max-width: 100%;
+  margin-top: -50px ;
   }
 
   .nivolines {
@@ -229,7 +228,7 @@ h3, .text-weight {
     margin-right:0;
     margin-top: 1px ;
     max-width: 100%;
-    max-height: 101%;
+    max-height: 102%;
   }
 
   .pokerdots {
@@ -542,7 +541,6 @@ h1.skills-btn {
   align-self: flex-end;
   z-index: 0; 
   margin-right:0;
-  /* margin-top: 1px ; */
   margin-top: clamp(-10px, -10vh, -10px);
   max-width: 100%;
   max-height: 101%;

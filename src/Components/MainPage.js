@@ -258,8 +258,8 @@ export default function MainPage() {
             src={projectsdots}
             alt="semicircle pattern dots"
             layout="responsive"
-            width={600}
-            height={600}
+            width={500}
+            height={500}
           />
           <section className="p-5 text-center projects-title" id="projects">
             <div className="container  pt-2 side-text">
