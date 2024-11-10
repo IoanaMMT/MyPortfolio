@@ -304,12 +304,12 @@ export default function MainPage() {
         {/* ******************************* Transport Trends Chart ********************************************** */}
         <section className="other-project">
           <img
-            className=" nivolines"
+            className="nivolines"
             src={wave}
             alt="lines patterns"
             layout="responsive"
             width={560}
-            height={700}
+            height={650}
           />
           <div className="container pt-5 pb-5">
             <div className="row align-items-centre justify-content-between">

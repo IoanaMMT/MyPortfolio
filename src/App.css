@@ -197,6 +197,10 @@ h3, .text-weight {
   background-color: #181f1c;
 }
 
+.to-do-desktop {
+  z-index: 1;
+ }
+
 .projects-first-page, .story-pointing {
   min-height: 100vh;
   background: #181f1c;
@@ -539,16 +543,13 @@ h1.skills-btn {
   }
 
  .to-do-desktop {
-  z-index: 3;
+  z-index: 5;
  }
 
  .nivolines {
   opacity: 0.3;
   position: absolute;
-  align-self: flex-end;
   z-index: 0; 
-  margin-right:0;
-  /* margin-top: clamp(-10px, -10vh, -10px); */
   max-width: 100%;
   max-height: 100%;
 
