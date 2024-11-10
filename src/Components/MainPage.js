@@ -25,6 +25,7 @@ import skillsdotsright from "./Decoratives/Skills-dots-right.svg";
 import projectsdots from "./Decoratives/Projects-dots.svg";
 import nivolines from "./Decoratives/Nivo-lines.svg";
 import pokerdots from "./Decoratives/Poker-dots.svg";
+import wave from "./Decoratives/Wave.svg";
 import "../App.css";
 
 export default function MainPage() {
@@ -301,14 +302,14 @@ export default function MainPage() {
         {/* 
 
         {/* ******************************* Transport Trends Chart ********************************************** */}
-        <section className="p-5 other-project">
+        <section className="other-project">
           <img
-            className="img-fluid nivolines"
-            src={nivolines}
+            className=" nivolines"
+            src={wave}
             alt="lines patterns"
             layout="responsive"
-            width={400}
-            height={410}
+            width={560}
+            height={700}
           />
           <div className="container pt-5 pb-5">
             <div className="row align-items-centre justify-content-between">
